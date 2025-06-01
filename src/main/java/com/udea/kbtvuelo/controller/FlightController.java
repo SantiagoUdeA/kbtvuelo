@@ -45,6 +45,7 @@ public class FlightController {
 
     @GetMapping
     public Iterable<Flight> findAll(){
+        System.out.println("Request received");
         return flightService.findAll();
     }
 
